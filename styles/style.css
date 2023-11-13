@@ -1,0 +1,229 @@
+@import url('null.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap');
+
+html::-webkit-scrollbar {
+	display: none;
+	background-color: #383838;
+}
+
+body {
+	background: url('/img/bg.png') no-repeat;
+	background-size: 100% 1250px;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	color: #fff;
+	font-family: 'TT Travels';
+	margin-bottom: 50px;
+}
+
+.container {
+	max-width: 1620px;
+	margin: auto;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	height: 80px;
+	margin-top: 30px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo a {
+	color: #d9d9d9;
+	font-family: Bebas Neue;
+	font-size: 64px;
+	text-transform: uppercase;
+}
+
+.search-form input {
+	width: 389px;
+	height: 51.948px;
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.9);
+	color: #000;
+
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+
+	padding: 8px 16px 8px 0;
+}
+
+.search-form input::placeholder {
+	color: #000;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.profile img {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.profile img:hover {
+	cursor: pointer;
+}
+
+.profile .nickname {
+	font-family: JetBrains Mono;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.search-form {
+	position: relative;
+}
+
+.search-form::before {
+	content: url('/img/search-icon.png');
+	position: absolute;
+	left: 16px;
+	top: 15px;
+}
+
+.search-form input {
+	padding-left: 48px;
+}
+
+/* Main section */
+
+.red {
+	color: #ed0707;
+}
+
+.orange {
+	color: #f1b009;
+}
+
+.main-section {
+	margin-top: 136px;
+}
+
+.main-section .title {
+	max-width: 1284px;
+	font-size: 61.04px;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+.main-section .description {
+	max-width: 1095px;
+	margin-top: 24px;
+	color: rgba(255, 255, 255, 0.64);
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 127.971%;
+}
+
+.buttons {
+	margin-top: 46px;
+}
+
+.buttons .login-btn {
+	display: block;
+	display: inline-flex;
+	padding: 16px 30px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 50px;
+	background: #fff;
+
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 127.971%;
+	margin-right: 36px;
+	transition: all 300ms;
+}
+
+.buttons .sign-up-btn {
+	display: block;
+	display: inline-flex;
+	padding: 16px 48px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 50px;
+	background: #ff0303;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 127.971%;
+	transition: all 300ms;
+}
+
+.buttons .sign-up-btn:hover,
+.login-btn:hover {
+	transform: scale(1.05);
+	transition: all 700ms;
+}
+
+/* Recomended section */
+
+.recomended-section {
+	margin-top: 110px;
+}
+
+.recomended-text {
+	color: rgba(255, 255, 255, 0.64);
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 127.971%;
+}
+
+.card {
+	margin-right: 50px;
+}
+
+.card-container {
+	margin-top: 32px;
+	display: flex;
+}
+
+.card img {
+	opacity: 0.7;
+	transition: all 100ms;
+	cursor: pointer;
+}
+
+.card img:hover {
+	opacity: 1;
+	transform: scale(1.05);
+	transition: all 300ms;
+}
+
+.card .card-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 127.971%;
+	max-width: 250px;
+	margin: auto;
+	margin-top: 34px;
+}
+
+.slider-btn {
+	margin-top: 70px;
+}
+
+.slider-btn img {
+	transition: all 200ms;
+}
+
+.slider-btn img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	transition: all 500ms;
+}
